@@ -4,6 +4,8 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.zerkistudio.sukasuka.model.Product;
+import com.zerkistudio.sukasuka.model.User;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -12,6 +14,7 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +24,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //Memanggil Model User
+        User user = new User(1, "Demo User", "123");
+
+        //Memanggil Model Product
+        Product product = new Product(1,"Modem");
+        
+        //Memanggil Toast User
+        Toast.makeText(this, "User: " + user.getUsername() +"\n"
+                + "ID : " + user.getUserId(), Toast.LENGTH_SHORT).show();
+
+        //Memanggil Toast Product
+        Toast.makeText(this, "Product: " + product.getProductName() +"\n"
+        + "ID : " + product.getProductId(), Toast.LENGTH_SHORT).show();
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
