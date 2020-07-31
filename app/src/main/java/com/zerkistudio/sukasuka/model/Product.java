@@ -14,6 +14,12 @@ public class Product {
         this.SKU = SKU;
     }
 
+    //Constructor ProductId, ProductName
+    public Product(int productId, String productName) {
+        ProductId = productId;
+        ProductName = productName;
+    }
+
     //Getter and Setter
     public int getProductId() {
         return ProductId;
