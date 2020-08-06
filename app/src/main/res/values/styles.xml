@@ -16,4 +16,6 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="SplassScreenStyle" parent="Theme.AppCompat.NoActionBar"></style>
+
 </resources>
