@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         Product product = new Product(1,"Modem");
         
         //Memanggil Toast User
-        Toast.makeText(this, "User: " + user.getUsername() +"\n"
-                + "ID : " + user.getUserId(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "User: " + user.getNama() +"\n"
+                + "ID : " + user.getId(), Toast.LENGTH_SHORT).show();
 
         //Memanggil Toast Product
         Toast.makeText(this, "Product: " + product.getProductName() +"\n"

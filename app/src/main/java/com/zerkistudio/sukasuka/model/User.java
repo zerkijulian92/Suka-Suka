@@ -1,41 +1,51 @@
 package com.zerkistudio.sukasuka.model;
 
 public class User {
-    private int UserId;
-    private String Username;
-    private String Token;
+    private int Id;
+    private int IdPel;
+    private String Nama;
+    private String Email;
     private String Password;
 
     //Constructor
-    public User(int userId, String username, String password) {
-        UserId = userId;
-        Username = username;
+    public User(int id, int idPel, String nama, String password) {
+        Id = id;
+        IdPel = idPel;
+        Nama = nama;
         Password = password;
     }
 
     //Getter And Setter
-    public int getUserId() {
-        return UserId;
+    public int getId() {
+        return Id;
     }
 
-    public void setUserId(int userId) {
-        UserId = userId;
+    public int getIdPel() {
+        return IdPel;
     }
 
-    public String getUsername() {
-        return Username;
+    public void setIdPel(int idPel) {
+        IdPel = idPel;
     }
 
-    public void setUsername(String username) {
-        Username = username;
+    public void setId(int id) {
+        Id = id;
     }
 
-    public String getToken() {
-        return Token;
+    public String getNama() {
+        return Nama;
     }
 
-    public void setToken(String token) {
-        Token = token;
+    public void setNama(String nama) {
+        Nama = nama;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
     }
 
     public String getPassword() {
